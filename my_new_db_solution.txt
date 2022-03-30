@@ -1,1 +1,5 @@
 # to do 
+1) create database 
+2) create interface
+3) create flask instance
+4) upload code
