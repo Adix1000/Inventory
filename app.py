@@ -37,13 +37,9 @@ def load_insert_item_html():
         data3 = request.form['quantity']
         data4 = request.form['price']
         print(data, data2, data3, data4)
-        insert_new_record(data, data2, data3, data4)
+        #insert_new_record(data, data2, data3, data4)
         return render_template('insertitem.html', data=data)
     return render_template('insertitem.html')
-
-
-# @app.route('/insertitem', methods=['POST'])  # POST REQUEST
-# def load_form_from_insert_item_html():
 
 
 if __name__ == '__main__':
