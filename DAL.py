@@ -7,8 +7,12 @@ def set_sql_connection(file):
     This function will create connection to a database, using sqlite3 module
     This function returns a Connection object 
     """
-    con = sqlite3.connect(file)
-    return con
+    try:
+        con = sqlite3.connect(file)
+        return con
+    except Exception as e:
+        return 'my sritng'
+
 
 
 def set_cursor(con):
