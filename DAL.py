@@ -10,8 +10,8 @@ def set_sql_connection(file):
     try:
         con = sqlite3.connect(file)
         return con
-    except Exception as e:
-        return 'my sritng'
+    except sqlite3.Error as e:
+        return e
 
 
 
