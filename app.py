@@ -4,6 +4,7 @@ from DAL import *
 app = Flask(__name__)
 # kfir was here
 
+
 @app.route('/')
 def index():
     return '<h1>Hello DevOps Class</h1>'
