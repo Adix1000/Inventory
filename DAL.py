@@ -65,3 +65,23 @@ def sort_as_dict(cur, data):
         result.append(row)
 
     return result
+
+
+def sort_by_price(dbname, order='ASC'):
+    """
+    get max quantity
+    IN:  'ASC' | 'DESC'
+    TYPE:
+    OUT:
+    """
+    print("get_min_quantity")
+    con = set_sql_connection(dbname)  ## creates connection
+    cur = set_cursor(con)  ## creates cursor
+    # TO DO
+
+    query = "SELECT * FROM Inventory ORDER BY Price " + order + ";"
+    print(query)
+    result = cur.execute(query).fetchall()
+    # print(result)
+    close_sql_connection(con)
+    return result
